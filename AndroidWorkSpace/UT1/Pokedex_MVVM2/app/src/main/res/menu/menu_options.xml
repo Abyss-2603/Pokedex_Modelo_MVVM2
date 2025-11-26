@@ -4,9 +4,9 @@
 
     <!-- Acción visible directamente en la Toolbar -->
     <item
-        android:id="@+id/homeFragment"
+        android:id="@+id/favPokemonFragment"
         android:icon="@drawable/estrella"
-        android:title=""
+        android:title="Favoritos"
         app:showAsAction="always" />
 
 

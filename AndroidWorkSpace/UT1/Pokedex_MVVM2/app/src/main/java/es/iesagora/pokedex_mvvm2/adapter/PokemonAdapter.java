@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.navigation.NavController;
@@ -57,6 +58,7 @@ public class PokemonAdapter extends RecyclerView.Adapter<PokemonAdapter.PokemonV
             // Asociamos el objeto binding con la vista
             binding = ViewholderPokemonBinding.bind(itemView);
         }
+        
     }
 
     @Override
