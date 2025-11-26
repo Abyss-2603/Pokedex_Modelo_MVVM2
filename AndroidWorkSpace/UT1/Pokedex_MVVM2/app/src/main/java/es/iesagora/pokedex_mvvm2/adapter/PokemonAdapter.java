@@ -57,8 +57,11 @@ public class PokemonAdapter extends RecyclerView.Adapter<PokemonAdapter.PokemonV
             super(itemView);
             // Asociamos el objeto binding con la vista
             binding = ViewholderPokemonBinding.bind(itemView);
+
+            binding.ivFavorito.setOnClickListener(v -> {
+                v.setSelected(!v.isSelected());
+            });
         }
-        
     }
 
     @Override
