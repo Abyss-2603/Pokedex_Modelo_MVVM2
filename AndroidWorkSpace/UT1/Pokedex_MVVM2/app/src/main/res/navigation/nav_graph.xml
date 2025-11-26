@@ -3,12 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/favPokemonFragment">
+    app:startDestination="@id/pokedexFragment">
 
     <fragment
         android:id="@+id/favPokemonFragment"
         android:name="es.iesagora.pokedex_mvvm2.FavPokemonFragment"
-        android:label="fragment_fav_pokemon"
+        android:label="Pokemons Favoritos"
         tools:layout="@layout/fragment_fav_pokemon" >
         <action
             android:id="@+id/action_favPokemonFragment_to_detallesFragment"
@@ -17,15 +17,18 @@
     <fragment
         android:id="@+id/pokedexFragment"
         android:name="es.iesagora.pokedex_mvvm2.PokedexFragment"
-        android:label="fragment_pokedex"
+        android:label="Pokedex"
         tools:layout="@layout/fragment_pokedex" >
         <action
             android:id="@+id/action_pokedexFragment_to_detallesFragment"
             app:destination="@id/detallesFragment" />
+        <action
+            android:id="@+id/action_pokedexFragment_to_favPokemonFragment"
+            app:destination="@id/favPokemonFragment" />
     </fragment>
     <fragment
         android:id="@+id/detallesFragment"
         android:name="es.iesagora.pokedex_mvvm2.DetallesFragment"
-        android:label="fragment_detalles"
+        android:label="Detalles Pokemon"
         tools:layout="@layout/fragment_detalles" />
 </navigation>
